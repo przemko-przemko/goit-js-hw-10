@@ -47,7 +47,7 @@ searchInput.addEventListener('input', debounce(eventHandler, DEBOUNCE_DELAY));
 function renderCountryList(name) {
   const markup = name
     .map(country => {
-      return `<li class="country-list">
+      return `<li class="country-list" style="list-style:none">
                 <img src="${country.flags.svg}" alt="Flag of ${country.name}" width="60" height="40"><span >${country.name}</span></img>
               </li>`;
     })
@@ -57,7 +57,7 @@ function renderCountryList(name) {
 function renderCountryInfo(name) {
   const markup = name
     .map(country => {
-      return `<li class="country-list">
+      return `<li class="country-list" style="list-style:none">
         <img src="${country.flags.svg}" alt="Flag of ${
         country.name
       }" width="60" height="40"><span>${country.name}</span></img>
